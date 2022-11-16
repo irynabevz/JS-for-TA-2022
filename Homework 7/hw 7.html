@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 7</title>
+</head>
+<body>
+    <p id ='text'>I learning JavaScript events!</p> 
+<div>
+	<button onclick="changeStyleForParagraph(document.getElementById('text'))">Change style!</button>
+</div>
+<br>
+<div>
+    <button onclick = "changeBGToBlue()">Click to make the page blue</button>
+    <button ondblclick = "changeBGToPink()">Double-click to make the page pink</button>
+    <button onmousedown ="changeBGToBrown()">Click and hold to make the page brown</button>
+    <a href="" onmouseover = "changeBGToYellow()">Hover over to make the page yellow</a>
+</div>
+<br>
+<div>
+    <select id="names">
+        <option value="Peter">Peter</option>
+        <option value="John">John</option>
+        <option value="Alice">Alice</option>
+        <option value="Iryna">Iryna</option>
+    </select>
+
+    <button onclick="deleteName(document.getElementById('names'))">Delete this name</button>
+</div>
+<br>
+<button id="liveBtn">Live button!</button>
+<br>
+<div id="liveBtnMsg"></div>
+
+<div id="screenSize" onresize="displayScreenSize()">
+<p>Width: <span id="width"></span></p>
+<p>Height: <span id="height"></span></p>
+</div>
+
+<select name="country" id="country">
+	<option value="ger">Germany</option>
+	<option value="usa">USA</option>
+	<option value="ukr">Ukraine</option>
+</select>
+                    
+<select name="cities" id="cities">
+    <option value="ny">New-York</option>
+	<option value="dc">Washington</option>
+	<option value="boston">Boston</option>
+    <option value="chicago">Chicago</option>
+</select>
+<p></p>
+
+
+    <script src="hw 7.js"></script>
+</body>
+</html>
