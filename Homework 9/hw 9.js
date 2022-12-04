@@ -26,7 +26,6 @@ $(document).ready(function () {
     let checkboxes = $("input[type=checkbox]");
 
     $(checkboxes).change(function() {
-        console.log($(".checkbox:checked").length);
             if($(".checkbox:checked").length >= 4) {
                 $(checkboxes).prop("checked", false)
             }      
